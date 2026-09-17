@@ -99,8 +99,8 @@ export default function PsychodramaSection({ onOpenBooking }) {
               }}
             >
               <img
-                src="/assets/images/natalia-salve-post.png"
-                alt="Salve este post - Natália Bezerra Psicologia"
+                src="/assets/images/natalia-portrait-cyan.png"
+                alt="Natália Bezerra - Psicodrama"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />
             </div>

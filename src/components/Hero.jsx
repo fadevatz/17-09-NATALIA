@@ -131,7 +131,7 @@ export default function Hero({ onOpenBooking }) {
               }}
             >
               <img
-                src="/assets/images/natalia-portrait.png"
+                src="/assets/images/natalia-portrait-cyan.png"
                 alt="Psicóloga Natália Bezerra de Souza"
                 style={{
                   width: '100%',

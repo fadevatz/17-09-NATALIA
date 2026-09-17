@@ -100,7 +100,7 @@ ${userMsg ? `Mensagem: ${userMsg}` : ''}`;
               }}
             >
               <img
-                src="/assets/images/natalia-portrait.png"
+                src="/assets/images/natalia-portrait-nude.png"
                 alt="Natália Bezerra"
                 style={{ width: '100%', height: '100%', objectFit: 'cover' }}
               />

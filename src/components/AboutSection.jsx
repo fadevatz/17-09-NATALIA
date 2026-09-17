@@ -41,7 +41,7 @@ export default function AboutSection({ onOpenBooking }) {
               }}
             >
               <img
-                src="/assets/images/natalia-quem-e.png"
+                src="/assets/images/natalia-portrait-nude.png"
                 alt="Quem é a psicóloga Natália Bezerra?"
                 style={{ width: '100%', height: 'auto', display: 'block' }}
               />

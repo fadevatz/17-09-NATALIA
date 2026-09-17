@@ -218,8 +218,8 @@ export default function ServicesSection({ onOpenBooking }) {
 
           <div style={{ borderRadius: '16px', overflow: 'hidden', border: '2px solid var(--nude-bg)' }}>
             <img
-              src="/assets/images/natalia-areas-atuacao.png"
-              alt="Áreas de Atuação Natália Bezerra"
+              src="/assets/images/natalia-prancheta-sofa.png"
+              alt="Atendimento Psicológico Natália Bezerra"
               style={{ width: '100%', height: 'auto', display: 'block' }}
             />
           </div>
