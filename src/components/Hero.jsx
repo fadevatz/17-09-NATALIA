@@ -32,17 +32,6 @@ export default function Hero({ onOpenBooking }) {
         >
           {/* Left Side: Content & Headline */}
           <div style={{ padding: '48px 40px', zIndex: 2 }}>
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '10px', marginBottom: '20px' }}>
-              <span className="badge badge-teal">
-                <Sparkles size={14} />
-                <span>Psicóloga & Psicodramatista</span>
-              </span>
-              <span className="badge badge-terracotta">
-                <ShieldCheck size={14} />
-                <span>CRP: 06/136391</span>
-              </span>
-            </div>
-
             <h1
               style={{
                 fontSize: 'clamp(2.1rem, 3.5vw, 3rem)',
