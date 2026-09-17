@@ -57,32 +57,6 @@ export default function Hero({ onOpenBooking }) {
         }}
       >
         <div style={{ maxWidth: '620px' }}>
-          {/* Logo / Brand Title */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
-            <div
-              style={{
-                width: '38px',
-                height: '38px',
-                borderRadius: '50%',
-                backgroundColor: 'var(--teal-primary)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#FFFFFF',
-              }}
-            >
-              <Heart size={20} fill="#FFFFFF" />
-            </div>
-            <div>
-              <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.3rem', color: 'var(--petrol-dark)', lineHeight: 1.1 }}>
-                Natália Bezerra
-              </div>
-              <div style={{ fontSize: '0.8rem', color: 'var(--teal-dark)', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
-                Psicóloga & Psicodramatista
-              </div>
-            </div>
-          </div>
-
           {/* Main Title */}
           <h1
             style={{
