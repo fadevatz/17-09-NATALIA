@@ -1,118 +1,167 @@
 import React from 'react';
-import { MessageCircle, ShieldCheck, Sparkles, MapPin, Video, Award, Heart } from 'lucide-react';
+import { MessageCircle, Heart } from 'lucide-react';
 
 export default function Hero({ onOpenBooking }) {
   return (
     <section
       id="hero"
       style={{
-        paddingTop: '130px',
-        paddingBottom: '60px',
         position: 'relative',
+        width: '100%',
+        minHeight: '85vh',
+        marginTop: '80px',
+        display: 'flex',
+        alignItems: 'center',
         overflow: 'hidden',
-        background: 'linear-gradient(180deg, var(--nude-bg) 0%, #F5ECE0 100%)',
+        backgroundColor: '#F5ECE0',
       }}
     >
-      <div className="container">
-        {/* Main Hero Panoramic Card Container */}
-        <div
-          style={{
-            position: 'relative',
-            borderRadius: '32px',
-            overflow: 'hidden',
-            backgroundColor: '#FAF5EE',
-            border: '1px solid var(--border-light)',
-            boxShadow: 'var(--shadow-lg)',
-            display: 'grid',
-            gridTemplateColumns: '1fr 1fr',
-            minHeight: '480px',
-            alignItems: 'center',
-          }}
-          className="hero-panoramic-card"
-        >
-          {/* Left Side: Content & Headline */}
-          <div style={{ padding: '48px 40px', zIndex: 2 }}>
-            <h1
-              style={{
-                fontSize: 'clamp(2.1rem, 3.5vw, 3rem)',
-                letterSpacing: '-0.02em',
-                marginBottom: '16px',
-                color: 'var(--petrol-dark)',
-                lineHeight: 1.15,
-              }}
-            >
-              Espaço de Acolhimento, Autoconhecimento e <span style={{ color: 'var(--teal-primary)', fontStyle: 'italic', fontFamily: 'var(--font-serif)' }}>Transformação Humana</span>
-            </h1>
+      {/* Background Banner Image spanning 100% width */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundImage: 'url(/assets/images/natalia-wide-banner.png)',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundRepeat: 'no-repeat',
+          zIndex: 1,
+        }}
+      />
 
-            {/* Slogan Quote */}
+      {/* Gradient Mask to ensure high text contrast on the left */}
+      <div
+        style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          background: 'linear-gradient(90deg, rgba(245, 236, 224, 0.95) 0%, rgba(245, 236, 224, 0.85) 45%, rgba(245, 236, 224, 0.1) 75%, rgba(245, 236, 224, 0) 100%)',
+          zIndex: 2,
+        }}
+        className="hero-overlay-mask"
+      />
+
+      {/* Content Overlay */}
+      <div
+        className="container"
+        style={{
+          position: 'relative',
+          zIndex: 3,
+          paddingTop: '60px',
+          paddingBottom: '60px',
+        }}
+      >
+        <div style={{ maxWidth: '620px' }}>
+          {/* Logo / Brand Title */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '10px', marginBottom: '24px' }}>
             <div
               style={{
-                background: 'rgba(255, 255, 255, 0.85)',
-                borderLeft: '4px solid var(--terracotta-primary)',
-                padding: '12px 18px',
-                borderRadius: '0 12px 12px 0',
-                marginBottom: '24px',
-                boxShadow: 'var(--shadow-sm)',
+                width: '38px',
+                height: '38px',
+                borderRadius: '50%',
+                backgroundColor: 'var(--teal-primary)',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: '#FFFFFF',
               }}
             >
-              <p className="serif-quote" style={{ fontSize: '1.15rem', color: 'var(--petrol-dark)', fontWeight: 600, margin: 0 }}>
-                “💙 Amar e mudar as coisas me interessam mais.”
-              </p>
+              <Heart size={20} fill="#FFFFFF" />
             </div>
-
-            <p style={{ fontSize: '1rem', color: 'var(--text-secondary)', lineHeight: 1.6, marginBottom: '32px' }}>
-              A psicoterapia é um caminho seguro para ressignificar dores, fortalecer sua autoestima e alinhar sua trajetória pessoal e profissional.
-            </p>
-
-            {/* CTA Button (Single button - Removed 'Ver Áreas de Atuação') */}
-            <div style={{ marginBottom: '32px' }}>
-              <button onClick={onOpenBooking} className="btn btn-terracotta" style={{ padding: '18px 36px', fontSize: '1.05rem', width: '100%', maxWidth: '360px' }}>
-                <MessageCircle size={22} />
-                <span>Agendar Consulta WhatsApp</span>
-              </button>
-            </div>
-
-            {/* Service Highlights */}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', borderTop: '1px solid rgba(27,53,59,0.1)', paddingTop: '20px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--petrol-dark)' }}>
-                <Video size={18} color="var(--teal-primary)" />
-                <span>Atendimento On-line</span>
+            <div>
+              <div style={{ fontFamily: 'var(--font-heading)', fontWeight: 800, fontSize: '1.3rem', color: 'var(--petrol-dark)', lineHeight: 1.1 }}>
+                Natália Bezerra
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--petrol-dark)' }}>
-                <MapPin size={18} color="var(--terracotta-primary)" />
-                <span>Atendimento Presencial</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', fontSize: '0.85rem', fontWeight: 600, color: 'var(--petrol-dark)' }}>
-                <Award size={18} color="var(--teal-dark)" />
-                <span>Orientação de Carreira</span>
+              <div style={{ fontSize: '0.8rem', color: 'var(--teal-dark)', fontWeight: 600, letterSpacing: '0.05em', textTransform: 'uppercase' }}>
+                Psicóloga & Psicodramatista
               </div>
             </div>
           </div>
 
-          {/* Right Side: Panoramic Banner Image */}
-          <div style={{ position: 'relative', height: '100%', minHeight: '400px', width: '100%', overflow: 'hidden' }}>
-            <img
-              src="/assets/images/natalia-wide-banner.png"
-              alt="Dra. Natália Bezerra - Psicóloga"
+          {/* Main Title */}
+          <h1
+            style={{
+              fontSize: 'clamp(2.4rem, 4.2vw, 3.8rem)',
+              fontFamily: 'var(--font-heading)',
+              fontWeight: 700,
+              letterSpacing: '-0.02em',
+              marginBottom: '20px',
+              color: 'var(--petrol-dark)',
+              lineHeight: 1.15,
+            }}
+          >
+            Encontre o Equilíbrio <br />
+            <span style={{ color: 'var(--teal-primary)', fontStyle: 'italic', fontFamily: 'var(--font-serif)' }}>
+              Que Você Merece
+            </span>
+          </h1>
+
+          {/* Subtitle Paragraph */}
+          <p
+            style={{
+              fontSize: '1.15rem',
+              color: 'var(--text-secondary)',
+              lineHeight: 1.7,
+              marginBottom: '28px',
+            }}
+          >
+            Manter o equilíbrio emocional e a qualidade de vida que você merece é possível com um acompanhamento psicológico personalizado, empático e humanizado.
+          </p>
+
+          {/* Quote Pill */}
+          <div
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              background: 'rgba(255, 255, 255, 0.9)',
+              borderLeft: '4px solid var(--terracotta-primary)',
+              padding: '10px 18px',
+              borderRadius: '0 12px 12px 0',
+              marginBottom: '36px',
+              boxShadow: 'var(--shadow-sm)',
+            }}
+          >
+            <span className="serif-quote" style={{ fontSize: '1.05rem', color: 'var(--petrol-dark)', fontWeight: 600 }}>
+              “💙 Amar e mudar as coisas me interessam mais.”
+            </span>
+          </div>
+
+          {/* CTA Button styled like reference */}
+          <div>
+            <button
+              onClick={onOpenBooking}
+              className="btn btn-terracotta"
               style={{
-                width: '100%',
-                height: '100%',
-                objectFit: 'cover',
-                objectPosition: 'right center',
-                display: 'block',
+                padding: '20px 42px',
+                fontSize: '1.1rem',
+                borderRadius: 'var(--radius-full)',
+                boxShadow: '0 12px 30px rgba(217, 107, 67, 0.4)',
+                letterSpacing: '0.04em',
+                textTransform: 'uppercase',
               }}
-            />
+            >
+              <MessageCircle size={22} />
+              <span>AGENDE SUA CONSULTA</span>
+            </button>
           </div>
         </div>
       </div>
 
       <style>{`
-        @media (max-width: 900px) {
-          .hero-panoramic-card {
-            grid-template-columns: 1fr !important;
+        @media (max-width: 768px) {
+          #hero {
+            min-height: auto !important;
+            padding-top: 40px !important;
+            padding-bottom: 40px !important;
           }
-          .hero-panoramic-card > div:first-child {
-            padding: 32px 24px !important;
+          .hero-overlay-mask {
+            background: linear-gradient(180deg, rgba(245, 236, 224, 0.96) 0%, rgba(245, 236, 224, 0.88) 100%) !important;
           }
         }
       `}</style>
