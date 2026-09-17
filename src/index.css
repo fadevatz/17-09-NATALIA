@@ -1,29 +1,29 @@
 /* ==========================================================================
    DESIGN SYSTEM - DRA. NATÁLIA BEZERRA • PSICÓLOGA & PSICODRAMATISTA
-   PALETA OFICIAL "LUDICAMENTE"
+   PALETA LUDICAMENTE (SEM AMARELO GIRASSOL)
    ========================================================================== */
 
 :root {
-  /* Paleta Oficial Inspirada em LudicaMente */
+  /* Paleta Oficial Harmonizada */
   --turquesa-escuro: #2d9fb3;
   --turquesa-claro: #9be2eb;
   --verde-cacto: #6c8c5c;
   --bege-natural: #dfd6bc;
-  --amarelo-girassol: #e8b01c;
+  --terracotta-soft: #d96b43;
 
   /* Aliases para o Design System */
   --teal-primary: var(--turquesa-escuro);
   --teal-dark: #1e7180;
-  --teal-light: rgba(155, 226, 235, 0.35);
+  --teal-light: rgba(155, 226, 235, 0.3);
   --teal-subtle: #f0f9fa;
   
   --nude-bg: #f7f4ed;
   --nude-card: #FFFFFF;
   --nude-subtle: var(--bege-natural);
   
-  --terracotta-primary: var(--amarelo-girassol);
-  --terracotta-dark: #c99612;
-  --terracotta-light: rgba(232, 176, 28, 0.15);
+  --terracotta-primary: var(--terracotta-soft);
+  --terracotta-dark: #b8502a;
+  --terracotta-light: rgba(217, 107, 67, 0.15);
   
   --green-cactus: var(--verde-cacto);
   --green-cactus-light: rgba(108, 140, 92, 0.15);
@@ -32,7 +32,7 @@
   --petrol-medium: #2c4950;
   --petrol-muted: #57737b;
   
-  --coral-accent: var(--amarelo-girassol);
+  --coral-accent: var(--terracotta-soft);
   
   --text-primary: #1b353b;
   --text-secondary: #405c63;
@@ -46,7 +46,7 @@
   --shadow-sm: 0 4px 12px rgba(27, 53, 59, 0.04);
   --shadow-md: 0 12px 32px rgba(27, 53, 59, 0.08);
   --shadow-lg: 0 20px 48px rgba(27, 53, 59, 0.12);
-  --shadow-terracotta: 0 10px 25px rgba(232, 176, 28, 0.35);
+  --shadow-terracotta: 0 10px 25px rgba(217, 107, 67, 0.35);
   --shadow-teal: 0 10px 25px rgba(45, 159, 179, 0.35);
 
   /* Typography */
@@ -140,8 +140,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .badge-terracotta {
   background-color: var(--terracotta-light);
-  color: #9e7500;
-  border: 1px solid rgba(232, 176, 28, 0.3);
+  color: var(--terracotta-primary);
+  border: 1px solid rgba(217, 107, 67, 0.3);
 }
 
 .badge-cacto {
@@ -176,8 +176,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .btn-terracotta {
-  background-color: var(--amarelo-girassol);
-  color: #1b353b;
+  background-color: var(--terracotta-primary);
+  color: #FFFFFF;
   box-shadow: var(--shadow-terracotta);
 }
 
@@ -185,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: var(--terracotta-dark);
   color: #FFFFFF;
   transform: translateY(-2px);
-  box-shadow: 0 14px 30px rgba(232, 176, 28, 0.45);
+  box-shadow: 0 14px 30px rgba(217, 107, 67, 0.45);
 }
 
 .btn-teal {
