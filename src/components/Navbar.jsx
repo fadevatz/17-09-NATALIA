@@ -18,7 +18,6 @@ export default function Navbar({ onOpenBooking }) {
     { name: 'Sobre Mim', href: '#sobre' },
     { name: 'Áreas de Atuação', href: '#atuacao' },
     { name: 'Psicodrama', href: '#psicodrama' },
-    { name: 'Atendimento', href: '#modalidades' },
     { name: 'Dúvidas (FAQ)', href: '#faq' },
   ];
 

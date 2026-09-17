@@ -4,7 +4,6 @@ import Hero from './components/Hero';
 import AboutSection from './components/AboutSection';
 import ServicesSection from './components/ServicesSection';
 import PsychodramaSection from './components/PsychodramaSection';
-import ModalitySection from './components/ModalitySection';
 import FAQSection from './components/FAQSection';
 import CTASection from './components/CTASection';
 import Footer from './components/Footer';
@@ -42,7 +41,6 @@ ${notes ? `Observações: ${notes}` : ''}`;
         <AboutSection onOpenBooking={() => handleOpenBooking()} />
         <ServicesSection onOpenBooking={(srv) => handleOpenBooking(srv)} />
         <PsychodramaSection onOpenBooking={() => handleOpenBooking()} />
-        <ModalitySection onOpenBooking={() => handleOpenBooking()} />
         <FAQSection onOpenBooking={() => handleOpenBooking()} />
         <CTASection onOpenBooking={() => handleOpenBooking()} />
       </main>

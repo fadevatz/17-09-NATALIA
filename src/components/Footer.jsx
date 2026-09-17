@@ -46,7 +46,6 @@ export default function Footer({ onOpenBooking }) {
               <li><a href="#sobre" style={{ color: 'inherit', textDecoration: 'none' }}>Sobre Natália Bezerra</a></li>
               <li><a href="#atuacao" style={{ color: 'inherit', textDecoration: 'none' }}>Áreas de Atuação</a></li>
               <li><a href="#psicodrama" style={{ color: 'inherit', textDecoration: 'none' }}>Psicodrama & Ludicamente</a></li>
-              <li><a href="#modalidades" style={{ color: 'inherit', textDecoration: 'none' }}>Atendimento Presencial e On-line</a></li>
               <li><a href="#faq" style={{ color: 'inherit', textDecoration: 'none' }}>Perguntas Frequentes (FAQ)</a></li>
             </ul>
           </div>
